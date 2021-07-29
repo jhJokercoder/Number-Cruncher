@@ -3,11 +3,10 @@ import random
 
 
 
-def playgame(x,y):
+def playgame(x,y,answer):
     hints = ["Number is too high.", "Number is too low."]
     hint_counter = 0
     print(answer)
-    answer = random.randint(x,y)
 
     
 
@@ -84,13 +83,13 @@ def playgame(x,y):
                 
 
 def easy():
-    playgame(1,10)
+    playgame(1,10,random.randint(1,10))
         
 def medium():
-    playgame(1,100)
+    playgame(1,100,random.randint(1,100))
     
 def hard():
-    playgame(1,1000)
+    playgame(1,1000,random.randint(1,1000))
 
 
     
